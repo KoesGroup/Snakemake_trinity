@@ -6,7 +6,7 @@ A snakemake pipeline to create a transcriptome without the use of a reference ge
 [![Miniconda](https://img.shields.io/badge/miniconda-blue.svg)](https://conda.io/miniconda)
 
 # Aim
-Creating a Denovo transcriptome.fasta from RNAseq reads of a species of wich a reference genome is not avalable
+Creating a Denovo transcriptome.fasta from RNAseq reads of a species of wich a reference genome is not available
 
 
 # Description
