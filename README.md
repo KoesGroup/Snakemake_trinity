@@ -6,7 +6,7 @@ A snakemake pipeline to create a transcriptome without the use of a reference ge
 [![Miniconda](https://img.shields.io/badge/miniconda-blue.svg)](https://conda.io/miniconda)
 
 # Aim
-Creating a Denovo transcriptome.fasta from RNAseq reads of a species of wich a reference genome is not available
+Creating a Denovo transcriptome.fasta from single-end RNAseq reads of a species of wich a reference genome is not available
 
 
 # Description
@@ -15,7 +15,9 @@ Creating a Denovo transcriptome.fasta from RNAseq reads of a species of wich a r
 # Content
 - Snakefile containing the targeted output and the rules to generate them from the input files.
 - config/ , folder containing the configuration files making the Snakefile adaptable to any input files, genome and parameter for the rules.
+- sampleSheets folder containing the tab-searated sample descriptions and files(and path to)
 - envs/, folder containing the environments needed for the Snakefile to run. Need to make one specifically for MACS2 as MACS2 uses python 2.7 following the information found [here](https://groups.google.com/forum/#!searchin/snakemake/macs%7Csort:relevance/snakemake/60txGSq81zE/NzCUTdJ_AQAJ).
+- To be added: fasqs folder containing the raw single-end reads.
 
 
 # Usage
@@ -43,4 +45,5 @@ Simply type `Snakemake --use-conda` and provide the number of cores with `--core
 For cluster execution, please refer to the [Snakemake reference](https://snakemake.readthedocs.io/en/stable/executable.html#cluster-execution).
 
 # Main outputs
-
+trinity.Trinity.fasta a fasta file containing all the predicted transcripts.
+trinity.Trinity.fasta.      
