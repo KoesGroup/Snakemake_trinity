@@ -106,7 +106,7 @@ rule blast_for_funtions:
     params:
         evalue     = str(config['blast']['evalue']),     # 1e-10
         outFmt     = str(config['blast']['outFmt']),     # 6 qseqid qlen slen evalue salltitles
-        numThreads = str(config['blast']['numThreads']),    
+        numThreads = str(config['blast']['numThreads']),
         maxTargets = str(config['blast']['maxTargets']) # 1
     conda:
         "envs/blast.yaml"
@@ -117,7 +117,7 @@ rule blast_for_funtions:
         "-outfmt \"{params.outFmt}\" "
         "-evalue {params.evalue} "
         "-out {output} "
-        "-num_threads {params.numThreads}"
+        "-num_threads {params.numThreads} "
         "-max_target_seqs {params.maxTargets}"
 
 # add putative functions to deNove trabscriptome fasta file
