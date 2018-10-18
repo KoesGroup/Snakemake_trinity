@@ -1,7 +1,7 @@
 
-units: sampleSheets/Cpyg_samples.txt        #tab separeted files containing samplenames(sample) and path_to_reads (fq)
-#Cpar_samples.txt
-#Calibrachoa_samples.txt
+units: sampleSheets/Cpyg_samples.tsv        #tab separeted files containing samplenames(sample) and path_to_reads (fq)
+#Cpar_samples.tsv
+#Calibrachoa_samples.tsv
 
 ### Definition of the path Snakemake has to create
 working_dir: "temp/"
